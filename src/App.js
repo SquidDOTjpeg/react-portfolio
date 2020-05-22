@@ -9,8 +9,6 @@ import Projects from "./pages/Projects";
 import "./App.css";
 
 function App() {
-  function handleNavClick() {}
-
   return (
     <div>
       <Router>
