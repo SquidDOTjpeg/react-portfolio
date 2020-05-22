@@ -1,4 +1,14 @@
-.squid{
-    background-image: url(./Squid.jpg);
-    background-color: red;
+.nav-container{
+    background-color: lightgrey;
+    opacity: 70%;
+}
+
+.nav-links{
+    opacity: 100% !important;
+    color: navy;
+}
+
+.active{
+    color: white;
+    background-color: navy;
 }
