@@ -1,11 +1,13 @@
 .nav-container{
-    background-color: lightgrey;
+    background-color: lightblue;
     opacity: 70%;
 }
 
 .nav-links{
     opacity: 100% !important;
-    color: navy;
+    color: rgb(57, 134, 235);
+    font-family: monospace;
+    font-size: large;
 }
 
 .active{

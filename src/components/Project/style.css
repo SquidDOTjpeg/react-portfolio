@@ -1,0 +1,25 @@
+.project-container {
+  align-items: center;
+  height: 80%;
+  width: 80%;
+  border: white solid 1px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-images {
+  height: 100%;
+  width: 100%;
+}
+
+.links-container {
+  background-color: rgb(28, 28, 104);
+  box-shadow: 0 10px 6px -6px black;
+
+}
+
+a {
+  font-family: monospace;
+  color: white;
+}
