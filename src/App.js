@@ -10,7 +10,7 @@ import "./App.css";
 
 function App() {
   return (
-    <div>
+    <div className="wrapper container-fluid">
       <Router>
         <Nav />
         <Switch>
