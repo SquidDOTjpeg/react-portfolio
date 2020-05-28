@@ -1,10 +1,14 @@
 import React from "react";
-import "./style.css"
+import "./style.css";
 
 function Project(props) {
   return (
     <div className="project-container">
-      <img className="project-images" src={require("./Squid.jpg")} alt="Squid"></img>
+      <img
+        className="project-images"
+        src={require("./Squid.jpg")}
+        alt="Squid"
+      ></img>
       <div className="links-container">
         <a href={props.deployed}>{props.title}</a>
         <br />
@@ -14,4 +18,4 @@ function Project(props) {
   );
 }
 
-export default Project
+export default Project;

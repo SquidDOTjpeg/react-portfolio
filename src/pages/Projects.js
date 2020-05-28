@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ProjectJSON from "../projects.json";
 import Project from "../components/Project";
+import Title from "../components/Title/index"
 import "./style.css";
 import { Container, Col, Row } from "../components/Grid";
 
@@ -22,10 +23,8 @@ function Projects() {
   showProjects();
 
   return (
-    <>
-      <div className="project-title">
-        <p>Projects</p>
-      </div>
+    <div className="big-stuff-container">
+      <Title title="Projects" />
       <Row>
       {projects.map((project) => (
           <Col size="md-6">
@@ -39,7 +38,7 @@ function Projects() {
           </Col>
       ))}
       </Row>
-    </>
+    </div>
   );
 }
 

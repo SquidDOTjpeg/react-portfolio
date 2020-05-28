@@ -12,8 +12,8 @@
 }
 
 .active {
-  color: black;
-  box-shadow: 0px 6px 7px -3px gold;
+  color: blue;
+  box-shadow: 0px 6px 7px -5px blue;
   text-decoration: underline;
-  text-decoration-color: gold;
+  text-decoration-color: blue;
 }

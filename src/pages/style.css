@@ -7,20 +7,10 @@
   font-family: monospace;
 }
 
-.stuff-container {
-  width: 50vw;
-  text-align: left;
-  font-size: large;
-  font-family: monospace;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: rgb(129, 129, 129) -3px 3px 2px 0px;
-  background-color: rgb(211, 211, 211);
-  border-left: rgb(190, 190, 190) solid 4px;
-  border-bottom: rgb(170, 170, 170) solid 2px;
-}
-
-.words {
-  margin-left: 10px;
-  margin-bottom: 10px;
+.big-stuff-container {
+  background-color: rgb(81, 156, 241);
+  border-left: rgb(72, 136, 209) solid 2px;
+  border-bottom: rgb(59, 110, 168) solid 4px;
+  box-shadow: rgb(59, 59, 59) -3px 3px 2px 0px;
+  padding: 15px;
 }

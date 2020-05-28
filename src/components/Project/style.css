@@ -1,4 +1,6 @@
 .project-container {
+  box-shadow: rgb(59, 59, 59) -3px 3px 2px 0px;
+
   align-items: center;
   height: 80%;
   width: 80%;
@@ -14,12 +16,13 @@
 }
 
 .links-container {
-  background-color: rgb(28, 28, 104);
-  box-shadow: 0 10px 6px -6px black;
-
+  box-shadow: rgb(59, 59, 59) -3px 3px 2px 0px;
+  background-color: rgb(211, 211, 211);
+  border-left: rgb(190, 190, 190) solid 4px;
+  border-bottom: rgb(170, 170, 170) solid 2px;
 }
 
 a {
   font-family: monospace;
-  color: white;
+  color: black;
 }
