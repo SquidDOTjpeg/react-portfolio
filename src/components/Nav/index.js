@@ -1,5 +1,4 @@
 import React from "react";
-import { Row, Col } from "../Grid/index";
 import "./style.css";
 import { Link, useLocation } from "react-router-dom";
 
@@ -13,15 +12,6 @@ function Nav() {
         className={location.pathname === "/" ? "nav-links active" : "nav-links"}
       >
         Home
-      </Link>
-
-      <Link
-        to="/about"
-        className={
-          location.pathname === "/about" ? "nav-links active" : "nav-links"
-        }
-      >
-        About
       </Link>
 
       <Link
