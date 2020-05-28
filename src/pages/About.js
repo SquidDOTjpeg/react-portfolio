@@ -9,15 +9,15 @@ function About() {
     <div className="big-stuff-container">
       <Row>
         <Col size="md-6">
-          <Title title="About Me" />
+          <Title>About Me</Title>
 
-          <WordBox
-            words="Hey there! I'm Anthony Pillow, an aspiring full stack web developer. I
-   have a wide range of knowledge of languages used in web development
-   with a heavier focus on the MERN stack."
-          />
+          <WordBox>
+            Hey there! I'm Anthony Pillow, an aspiring full stack web developer.
+            I have a wide range of knowledge of languages used in web
+            development with a heavier focus on the MERN stack.
+          </WordBox>
 
-          <WordBox words="I'm always looking for ways to improve myself, my code, and I'm always open to new ideas as well as suggestions." />
+          <WordBox>I'm always looking for ways to improve myself, my code, and I'm always open to new ideas as well as suggestions.</WordBox>
         </Col>
       </Row>
     </div>

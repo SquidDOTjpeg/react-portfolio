@@ -24,7 +24,7 @@ function Projects() {
 
   return (
     <div className="big-stuff-container">
-      <Title title="Projects" />
+      <Title>Projects</Title>
       <Row>
       {projects.map((project) => (
           <Col size="md-6">

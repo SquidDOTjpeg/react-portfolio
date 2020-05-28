@@ -1,11 +1,11 @@
 import React from "react";
 import "./style.css";
 
-function WordBox(props) {
+function ContactContainer(props) {
   return (
       <>
     <div>
-      <div className="word-box-container">
+      <div className="stuff-container">
         <p className="words">
             {props.children}
         </p>
@@ -16,4 +16,4 @@ function WordBox(props) {
   );
 }
 
-export default WordBox;
+export default ContactContainer;
