@@ -1,17 +1,14 @@
 import React from "react";
 import "./style.css";
-import Images from "../Images/index";
+
 
 function Project(props) {
+  var image = props.imgpath
+  console.log(image)
+  var fuckshit = require("../../Images/assets/" + image)
   return (
     <div className="project-container">
-      {Images.map((el) => {
-        if (el.src !== props.imgpath) {
-        } else
-          return (
-            <img className="project-images" src={el.src} alt="Squid"></img>
-          );
-      })}
+      <img src={fuckshit} alt="trash" className="project-images"></img>
       <div className="links-container">
         <a href={props.deployed}>{props.title}</a>
         <br />
