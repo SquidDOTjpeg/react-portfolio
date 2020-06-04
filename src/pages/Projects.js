@@ -3,7 +3,7 @@ import ProjectJSON from "../projects.json";
 import Project from "../components/Project";
 import Title from "../components/Title/index"
 import "./style.css";
-import { Container, Col, Row } from "../components/Grid";
+import { Col, Row } from "../components/Grid";
 
 function Projects() {
   const [projects, setProject] = useState([]);

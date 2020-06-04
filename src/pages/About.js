@@ -26,9 +26,34 @@ function About() {
           <WordBox>
             I've been studying more than just the MERN stack too!
             <br />
-            <List
-              items={["SQL", "Sequelize", "Mongo", "React", "Node", "Git"]}
-            ></List>
+            <Row>
+              <Col size="md-6">
+                <List
+                  items={[
+                    "HTML5",
+                    "CSS3",
+                    "JavaScript",
+                    "jQuery",
+                    "Bootstrap",
+                    "Express.js",
+                    " React.js",
+                  ]}
+                />
+              </Col>
+              <Col size="md-6">
+                <List
+                  items={[
+                    " Database Theory",
+                    "MongoDB",
+                    " MySQL",
+                    " Command Line",
+                    " Java",
+                    " Git",
+                    "Node.js",
+                  ]}
+                />
+              </Col>
+            </Row>
           </WordBox>
         </Col>
       </Row>
