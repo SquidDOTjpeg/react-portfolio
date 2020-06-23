@@ -1,3 +1,9 @@
+html, body{
+  background-image: url(../Images/assets/background.jpg);
+  
+  
+}
+
 .project-title {
   color: white;
   margin-top: 10px;
@@ -8,9 +14,14 @@
 }
 
 .big-stuff-container {
-  background-color: rgb(81, 156, 241);
+  background-color: rgba(81, 156, 241, .5);
   border-left: rgb(72, 136, 209) solid 2px;
   border-bottom: rgb(59, 110, 168) solid 4px;
   box-shadow: rgb(59, 59, 59) -3px 3px 2px 0px;
   padding: 15px;
 }
+
+.hey-that-guy-looks-like-me{
+  margin: auto;
+}
+

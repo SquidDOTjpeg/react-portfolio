@@ -56,6 +56,9 @@ function About() {
             </Row>
           </WordBox>
         </Col>
+        <Col size="md-6">
+          <img src="" alt="This should have me here but it doesn't" className="hey-that-guy-looks-like-me"></img>
+        </Col>
       </Row>
     </div>
   );

@@ -3,12 +3,11 @@ import "./style.css";
 
 
 function Project(props) {
-  var image = props.imgpath
-  console.log(image)
-  var fuckshit = require("../../Images/assets/" + image)
+  var imagepath = props.imgpath
+  var image = require("../../Images/assets/" + imagepath)
   return (
     <div className="project-container">
-      <img src={fuckshit} alt="trash" className="project-images"></img>
+      <img src={image} alt="trash" className="project-images"></img>
       <div className="links-container">
         <a href={props.deployed}>{props.title}</a>
         <br />
