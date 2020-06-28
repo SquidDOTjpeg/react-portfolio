@@ -25,3 +25,8 @@ html, body{
   margin: auto;
 }
 
+.div-banner {
+  height: 100vh;
+  width: 25%;
+  background-color: #fff;
+}

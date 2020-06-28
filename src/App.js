@@ -4,6 +4,7 @@ import Nav from "./components/Nav/index";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
+import Test from "./pages/Test";
 import "./App.css";
 
 function App() {
@@ -19,6 +20,9 @@ function App() {
         </Route>
         <Route exact path="/contact">
           <Contact />
+        </Route>
+        <Route exact path="/test">
+          <Test />
         </Route>
       </Switch>
     </Router>
