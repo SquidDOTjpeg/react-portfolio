@@ -1,27 +1,29 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.fd4eac6e.chunk.css",
-    "main.js": "/react-portfolio/static/js/main.00486352.chunk.js",
-    "main.js.map": "/react-portfolio/static/js/main.00486352.chunk.js.map",
+    "main.css": "/react-portfolio/static/css/main.d456c808.chunk.css",
+    "main.js": "/react-portfolio/static/js/main.f68b6cad.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.f68b6cad.chunk.js.map",
     "runtime-main.js": "/react-portfolio/static/js/runtime-main.8c64cdeb.js",
     "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.8c64cdeb.js.map",
-    "static/js/2.0a3b285c.chunk.js": "/react-portfolio/static/js/2.0a3b285c.chunk.js",
-    "static/js/2.0a3b285c.chunk.js.map": "/react-portfolio/static/js/2.0a3b285c.chunk.js.map",
+    "static/js/2.41ee9d9b.chunk.js": "/react-portfolio/static/js/2.41ee9d9b.chunk.js",
+    "static/js/2.41ee9d9b.chunk.js.map": "/react-portfolio/static/js/2.41ee9d9b.chunk.js.map",
     "index.html": "/react-portfolio/index.html",
-    "precache-manifest.c3887bc5c4f97f48ce42b615bf11400d.js": "/react-portfolio/precache-manifest.c3887bc5c4f97f48ce42b615bf11400d.js",
+    "precache-manifest.0d5cd09dac83f4fbffbde208cb12904a.js": "/react-portfolio/precache-manifest.0d5cd09dac83f4fbffbde208cb12904a.js",
     "service-worker.js": "/react-portfolio/service-worker.js",
-    "static/css/main.fd4eac6e.chunk.css.map": "/react-portfolio/static/css/main.fd4eac6e.chunk.css.map",
-    "static/js/2.0a3b285c.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.0a3b285c.chunk.js.LICENSE.txt",
+    "static/css/main.d456c808.chunk.css.map": "/react-portfolio/static/css/main.d456c808.chunk.css.map",
+    "static/js/2.41ee9d9b.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.41ee9d9b.chunk.js.LICENSE.txt",
     "static/media/Squid.jpg": "/react-portfolio/static/media/Squid.77829a83.jpg",
     "static/media/art.jpg": "/react-portfolio/static/media/art.047daae1.jpg",
+    "static/media/bg.jpg": "/react-portfolio/static/media/bg.488ec6db.jpg",
     "static/media/daily-planner.jpg": "/react-portfolio/static/media/daily-planner.6fe07faf.jpg",
     "static/media/finance.jpg": "/react-portfolio/static/media/finance.fcbce422.jpg",
-    "static/media/hippo.jpg": "/react-portfolio/static/media/hippo.302f7975.jpg"
+    "static/media/hippo.jpg": "/react-portfolio/static/media/hippo.302f7975.jpg",
+    "static/media/me.jpg": "/react-portfolio/static/media/me.914e6532.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.8c64cdeb.js",
-    "static/js/2.0a3b285c.chunk.js",
-    "static/css/main.fd4eac6e.chunk.css",
-    "static/js/main.00486352.chunk.js"
+    "static/js/2.41ee9d9b.chunk.js",
+    "static/css/main.d456c808.chunk.css",
+    "static/js/main.f68b6cad.chunk.js"
   ]
 }
