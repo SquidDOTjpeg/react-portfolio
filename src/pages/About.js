@@ -3,6 +3,7 @@ import WordBox from "../components/WordBox/index";
 import Title from "../components/Title/index";
 import { Row, Col } from "../components/Grid/index";
 import List from "../components/List/index";
+import MeImage from "../components/MeImage/index";
 import "./style.css";
 
 function About() {
@@ -55,6 +56,9 @@ function About() {
               </Col>
             </Row>
           </WordBox>
+        </Col>
+        <Col size="md-6">
+          <MeImage />
         </Col>
       </Row>
     </div>

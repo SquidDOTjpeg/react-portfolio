@@ -1,0 +1,14 @@
+.handsome-container{
+    /* width: 100px;
+    height: 100px; */
+}
+
+.handsome-devil{
+    border: 2px solid rgba(73, 73, 73, 0.5);
+    box-shadow: rgb(0, 0, 0) -3px 3px 2px 0px;
+
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

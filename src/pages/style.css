@@ -2,6 +2,7 @@ html, body{
   background-image: url(../Images/assets/bg.jpg);
   background-position: center;
   background-size: 1300px;
+  background-position: top 100px;
 }
 
 .project-title {
