@@ -1,13 +1,16 @@
 .nav-container {
   height: 45px;
-  background-color: rgb(0, 86, 121);
-  border-bottom: 4px solid rgb(0, 38, 53);
+  background-color: rgba(53, 53, 53, 0.5);
+  border-bottom: 4px solid rgba(0, 0, 0, 0.3);
+  /* padding-bottom: 5px; */
   margin-left: auto;
   margin-right: auto;
+  backdrop-filter: blur(15px);
+  margin-bottom: 5px;
 }
 
 .nav-links {
-  box-shadow: rgb(59, 59, 59) -3px 3px 2px 0px;
+  box-shadow: rgb(0, 0, 0) -3px 3px 2px 0px;
   background-color: rgb(211, 211, 211);
   border-left: rgb(190, 190, 190) solid 4px;
   border-bottom: rgb(170, 170, 170) solid 2px;
@@ -18,7 +21,6 @@
 }
 
 .active {
-  box-shadow: rgb(59, 59, 59) -3px 3px 2px 0px;
   background-color: rgb(255, 196, 0);
   border-left: rgb(223, 171, 0) solid 4px;
   border-bottom: rgb(199, 152, 0) solid 2px;

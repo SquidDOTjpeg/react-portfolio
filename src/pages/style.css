@@ -1,5 +1,7 @@
 html, body{
-  background-image: url();
+  background-image: url(../Images/assets/bg.jpg);
+  background-position: center;
+  background-size: 1300px;
 }
 
 .project-title {
@@ -12,10 +14,10 @@ html, body{
 }
 
 .big-stuff-container {
-  background-color: rgba(81, 156, 241, 0.5);
-  border-left: rgb(72, 136, 209) solid 2px;
-  border-bottom: rgb(59, 110, 168) solid 4px;
-  box-shadow: rgb(59, 59, 59) -3px 3px 2px 0px;
+  background-color: rgba(42, 42, 43, 0.5);
+  /* border-left: rgb(61, 61, 61) solid 2px; */
+  border-bottom: rgb(17, 17, 17) solid 4px;
+  /* box-shadow: rgb(0, 0, 0)px 3px 2px 0px; */
   padding: 15px;
   backdrop-filter: blur(15px);
 }
