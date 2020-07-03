@@ -4,6 +4,7 @@ import Title from "../components/Title/index";
 import { Row, Col } from "../components/Grid/index";
 import ContactLinks from "../components/ContactLinks/index";
 import "./style.css";
+import EmailForm from "../components/EmailForm";
 
 function Contact() {
   return (
@@ -16,13 +17,13 @@ function Contact() {
       <Row>
         <Col size="md-4">
           <ContactContainer>
-            <i class="fas fa-envelope"></i>{" "}
+            <i className="fas fa-envelope"></i>{" "}
             <ContactLinks>anthonypillow18@gmail.com</ContactLinks>
           </ContactContainer>
         </Col>
         <Col size="md-4">
           <ContactContainer>
-            <i class="fab fa-github"></i>{" "}
+            <i className="fab fa-github"></i>{" "}
             <ContactLinks link="https://github.com/SquidDOTjpeg">
               SquidDOTjpeg
             </ContactLinks>
@@ -30,13 +31,15 @@ function Contact() {
         </Col>
         <Col size="md-4">
           <ContactContainer>
-            <i class="fab fa-linkedin-in"></i>{" "}
+            <i className="fab fa-linkedin-in"></i>{" "}
             <ContactLinks link="https://www.linkedin.com/in/anthony-pillow-81a0a518a/">
               Anthony Pillow
             </ContactLinks>
           </ContactContainer>
         </Col>
       </Row>
+
+      <EmailForm />
     </div>
   );
 }
