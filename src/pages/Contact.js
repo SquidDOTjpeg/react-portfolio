@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ContactContainer from "../components/ContactContainers/index";
 import Title from "../components/Title/index";
 import { Row, Col } from "../components/Grid/index";
@@ -7,40 +7,52 @@ import "./style.css";
 import EmailForm from "../components/EmailForm";
 
 function Contact() {
-  return (
-    <div className="big-stuff-container">
-      <Row>
-        <Col size="md-12">
-          <Title>Contact Me</Title>
-        </Col>
-      </Row>
-      <Row>
-        <Col size="md-4">
-          <ContactContainer>
-            <i className="fas fa-envelope"></i>{" "}
-            <ContactLinks>anthonypillow18@gmail.com</ContactLinks>
-          </ContactContainer>
-        </Col>
-        <Col size="md-4">
-          <ContactContainer>
-            <i className="fab fa-github"></i>{" "}
-            <ContactLinks link="https://github.com/SquidDOTjpeg">
-              SquidDOTjpeg
-            </ContactLinks>
-          </ContactContainer>
-        </Col>
-        <Col size="md-4">
-          <ContactContainer>
-            <i className="fab fa-linkedin-in"></i>{" "}
-            <ContactLinks link="https://www.linkedin.com/in/anthony-pillow-81a0a518a/">
-              Anthony Pillow
-            </ContactLinks>
-          </ContactContainer>
-        </Col>
-      </Row>
+  const [formObject, setFormObject] = useState();
 
-      <EmailForm />
-    </div>
+  function handleFormInput(event) {
+    const { name, value } = event.target;
+    setFormObject({ ...formObject, [name]: value });
+    console.log(formObject)
+  }
+
+  return (
+    <>
+      <div className="big-stuff-container">
+        <Row>
+          <Col size="md-12">
+            <Title>Contact Me</Title>
+          </Col>
+        </Row>
+        <Row>
+          <Col size="md-4">
+            <ContactContainer>
+              <i className="fas fa-envelope"></i>{" "}
+              <ContactLinks>anthonypillow18@gmail.com</ContactLinks>
+            </ContactContainer>
+          </Col>
+          <Col size="md-4">
+            <ContactContainer>
+              <i className="fab fa-github"></i>{" "}
+              <ContactLinks link="https://github.com/SquidDOTjpeg">
+                SquidDOTjpeg
+              </ContactLinks>
+            </ContactContainer>
+          </Col>
+          <Col size="md-4">
+            <ContactContainer>
+              <i className="fab fa-linkedin-in"></i>{" "}
+              <ContactLinks link="https://www.linkedin.com/in/anthony-pillow-81a0a518a/">
+                Anthony Pillow
+              </ContactLinks>
+            </ContactContainer>
+          </Col>
+        </Row>
+      </div>
+      <br></br>
+      <div className="big-stuff-container">
+        <EmailForm handleFormInput={handleFormInput} />
+      </div>
+    </>
   );
 }
 
