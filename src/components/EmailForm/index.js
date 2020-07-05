@@ -3,7 +3,7 @@ import "./style.css";
 import { Col, Row } from "../Grid";
 import Title from "../Title";
 
-function EmailForm({ handleFormInput }) {
+function EmailForm({ handleFormInput, submitForm }) {
   return (
     <div className="email-container">
       <Title>Email Me</Title>
@@ -17,7 +17,7 @@ function EmailForm({ handleFormInput }) {
               onChange={handleFormInput}
             ></input>
           </Col>
-          <Col>
+          <Col size="md-6">
             <input
               name="subject"
               className="subject-input"
@@ -26,6 +26,7 @@ function EmailForm({ handleFormInput }) {
             ></input>
           </Col>
         </Row>
+        <br />
         <Row>
           <Col size="md-12">
             <input
@@ -34,6 +35,12 @@ function EmailForm({ handleFormInput }) {
               placeholder="Email"
               onChange={handleFormInput}
             ></input>
+          </Col>
+        </Row>
+        <br />
+        <Row>
+          <Col size="md-12">
+            <button onClick={submitForm} className="send-btn">Send</button>
           </Col>
         </Row>
       </form>

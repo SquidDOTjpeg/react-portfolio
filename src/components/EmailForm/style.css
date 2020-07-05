@@ -1,3 +1,35 @@
-.email-container{
-    width: 100%;
+.email-container {
+  width: 100%;
+}
+
+.name-input {
+  border-radius: 0;
+  width: 50%;
+}
+
+.subject-input {
+  border-radius: 0;
+
+  width: 50%;
+}
+
+.email-input {
+  border-radius: 0;
+
+  width: 100%;
+  height: 300px;
+}
+
+.send-btn {
+  text-align: left;
+  font-size: large;
+  font-family: monospace;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: rgb(0, 0, 0) -3px 3px 2px 0px;
+  background-color: rgb(211, 211, 211);
+  border-left: rgb(190, 190, 190) solid 4px;
+  border-bottom: rgb(170, 170, 170) solid 2px;
+  border-top: none;
+  border-right: none;
 }

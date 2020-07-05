@@ -15,6 +15,11 @@ function Contact() {
     console.log(formObject)
   }
 
+  function submitForm(event){
+    event.preventDefault()
+    console.log(formObject)
+  }
+
   return (
     <>
       <div className="big-stuff-container">
@@ -50,7 +55,7 @@ function Contact() {
       </div>
       <br></br>
       <div className="big-stuff-container">
-        <EmailForm handleFormInput={handleFormInput} />
+        <EmailForm handleFormInput={handleFormInput} submitForm={submitForm} />
       </div>
     </>
   );
