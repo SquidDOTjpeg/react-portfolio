@@ -5,6 +5,7 @@ import { Row, Col } from "../components/Grid/index";
 import ContactLinks from "../components/ContactLinks/index";
 import "./style.css";
 import EmailForm from "../components/EmailForm";
+import axios from "axios"
 
 function Contact() {
   const [formObject, setFormObject] = useState();
@@ -18,7 +19,22 @@ function Contact() {
   function submitForm(event){
     event.preventDefault()
     console.log(formObject)
+    axios({
+      method: "POST",
+      url:"http://localhost:3002/send",
+      data: formObject
+    }).then((response) => {
+      console.log(response)
+      if(response.data.status === "success"){
+        alert("message sent")
+        setFormObject({})
+      }else if(response.data.status === "failed"){
+        alert("message failed to send")
+      }
+    }) 
   }
+
+
 
   return (
     <>

@@ -7,6 +7,7 @@ function EmailForm({ handleFormInput, submitForm }) {
   return (
     <div className="email-container">
       <Title>Email Me</Title>
+      <br />
       <form>
         <Row>
           <Col size="md-6">
@@ -19,9 +20,9 @@ function EmailForm({ handleFormInput, submitForm }) {
           </Col>
           <Col size="md-6">
             <input
-              name="subject"
-              className="subject-input"
-              placeholder="Subject"
+              name="author"
+              className="author-input"
+              placeholder="Your Email"
               onChange={handleFormInput}
             ></input>
           </Col>
@@ -40,7 +41,9 @@ function EmailForm({ handleFormInput, submitForm }) {
         <br />
         <Row>
           <Col size="md-12">
-            <button onClick={submitForm} className="send-btn">Send</button>
+            <button onClick={submitForm} className="send-btn">
+              Send
+            </button>
           </Col>
         </Row>
       </form>

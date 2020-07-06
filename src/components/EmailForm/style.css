@@ -5,17 +5,18 @@
 .name-input {
   border-radius: 0;
   width: 50%;
+  border: none;
 }
 
-.subject-input {
+.author-input {
   border-radius: 0;
-
   width: 50%;
+  border: none;
 }
 
 .email-input {
+  border: none;
   border-radius: 0;
-
   width: 100%;
   height: 300px;
 }
