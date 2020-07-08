@@ -24,20 +24,20 @@ transporter.verify((error, success) => {
 
 
 
-var mail = {
-  from: "chungus",
-  to: "APortfolioemail@gmail.com",
-  subject: "New Message From Portfolio Site",
-  text: "content"
-};
+// var mail = {
+//   from: "chungus",
+//   to: "APortfolioemail@gmail.com",
+//   subject: "New Message From Portfolio Site",
+//   text: "content"
+// };
 
-transporter.sendMail(mail, (err, data) => {
-    if(err) {
-        console.log(err)
-    } else {
-        console.log(data)
-    }
-});
+// transporter.sendMail(mail, (err, data) => {
+//     if(err) {
+//         console.log(err)
+//     } else {
+//         console.log(data)
+//     }
+// });
 
 router.post("/send", (req, res, next) => {
   var name = req.body.name;
