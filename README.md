@@ -7,3 +7,5 @@ This website is meant to show off my skills with creating react components aswel
 Anthony Pillow aka SquidDOTjpeg
 
 ## Links
+
+[Deployed](https://squiddotjpeg.github.io/react-portfolio/)
