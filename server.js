@@ -1,24 +1,22 @@
-require("dotenv").config()
+require("dotenv").config();
 var express = require("express");
 var router = express.Router();
 var nodemailer = require("nodemailer");
 var cors = require("cors");
-const PORT = process.env.PORT || 3002 
-const bodyParser = require("body-parser")
-const path = require("path")
+const PORT = process.env.PORT || 8080;
+const bodyParser = require("body-parser");
+const path = require("path");
 const app = express();
+const root = path.join(__dirname, "/build");
 
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(root));
 
-// if (process.env.NODE_ENV === "production") {
-//   app.use(express.static("client/build"));
-// }
-
-console.log(process.env.USER)
-console.log(process.env.PASS)
+app.get("*", function (req, res) {
+  res.sendFile("/index.html", { root });
+});
 
 var transport = {
   service: "gmail",
@@ -34,7 +32,7 @@ transporter.verify((error, success) => {
   if (error) {
     console.log(error);
   } else {
-    console.log("server ready");
+    console.log("Transporter is ready");
   }
 });
 
@@ -43,14 +41,14 @@ router.post("/send", (req, res, next) => {
   var author = req.body.author;
   var email = req.body.email;
   var content = `name: ${name} \n email: ${author} \n message: ${email}`;
-  
+
   var mail = {
     from: name,
     to: "APortfolioemail@gmail.com",
     subject: "New Message From Portfolio Site",
     text: content,
   };
-  
+
   transporter.sendMail(mail, (err, data) => {
     if (err) {
       console.log(err);
@@ -66,10 +64,8 @@ router.post("/send", (req, res, next) => {
   });
 });
 
-// app.get("*", function (req, res) {
-//   res.sendFile(path.join(__dirname, "./client/build/index.html"));
-// });
-
 app.use(express.json());
-// app.use("/", router);
-app.listen(PORT);
+app.use("/", router);
+app.listen(PORT, () => {
+  console.log("Server is running on " + PORT);
+});

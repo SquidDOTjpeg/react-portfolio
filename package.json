@@ -1,6 +1,6 @@
 {
   "name": "react-portfolio",
-  "homepage": "https://SquidDOTjpeg.github.io/react-portfolio/",
+  "proxy": "http://localhost:8080",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -18,14 +18,15 @@
     "react-scripts": "3.4.1"
   },
   "scripts": {
-    "both": "run-p server start",
-    "server": "node index.js",
-    "start": "react-scripts start",
+    "both": "run-p dev start",
+    "dev": "react-scripts start",
+    "start": "node server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "heroku-postbuild": "npm i && npm run build"
   },
   "eslintConfig": {
     "extends": "react-app"
