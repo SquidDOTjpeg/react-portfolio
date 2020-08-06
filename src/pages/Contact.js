@@ -20,7 +20,7 @@ function Contact() {
     console.log(formObject);
     axios({
       method: "POST",
-      url: "http://localhost:8080/send",
+      url: "https://squid-portfolio.herokuapp.com/send",
       data: formObject,
     }).then((response) => {
       if (response.data.status === "success") {
