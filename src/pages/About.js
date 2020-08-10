@@ -24,37 +24,40 @@ function About() {
             always open to new ideas as well as suggestions.
           </WordBox>
 
-          <WordBox>
+          <WordBox
+            after={
+              <Row>
+                <Col size="md-6">
+                  <List
+                    items={[
+                      "HTML5",
+                      "CSS3",
+                      "JavaScript",
+                      "jQuery",
+                      "Bootstrap",
+                      "Express.js",
+                      " React.js",
+                    ]}
+                  />
+                </Col>
+                <Col size="md-6">
+                  <List
+                    items={[
+                      " Database Theory",
+                      "MongoDB",
+                      " MySQL",
+                      " Command Line",
+                      " Java",
+                      " Git",
+                      "Node.js",
+                    ]}
+                  />
+                </Col>
+              </Row>
+            }
+          >
             I've been studying more than just the MERN stack too!
             <br />
-            <Row>
-              <Col size="md-6">
-                <List
-                  items={[
-                    "HTML5",
-                    "CSS3",
-                    "JavaScript",
-                    "jQuery",
-                    "Bootstrap",
-                    "Express.js",
-                    " React.js",
-                  ]}
-                />
-              </Col>
-              <Col size="md-6">
-                <List
-                  items={[
-                    " Database Theory",
-                    "MongoDB",
-                    " MySQL",
-                    " Command Line",
-                    " Java",
-                    " Git",
-                    "Node.js",
-                  ]}
-                />
-              </Col>
-            </Row>
           </WordBox>
         </Col>
         <Col size="md-6">

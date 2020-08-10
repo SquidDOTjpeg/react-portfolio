@@ -4,11 +4,11 @@ import ListItem from "../ListItem/index";
 function List(props) {
   return (
     <div>
-      <ui>
+      <ul>
         {props.items.map((el) => (
-          <ListItem>{el}</ListItem>
+          <ListItem key={el}>{el}</ListItem>
         ))}
-      </ui>
+      </ul>
     </div>
   );
 }
