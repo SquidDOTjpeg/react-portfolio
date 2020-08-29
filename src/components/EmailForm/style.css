@@ -1,36 +1,38 @@
 .email-container {
   width: 100%;
+  border-radius: 1rem;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgb(0, 0, 0) -3px 3px 2px 0px;
+  border-left: rgb(190, 190, 190) solid 4px;
+  border-bottom: rgb(170, 170, 170) solid 2px;
+  border-radius: 1rem;
 }
 
 .name-input {
   border-radius: 0;
   width: 50%;
-  border: none;
+  /* border: none; */
 }
 
 .author-input {
   border-radius: 0;
   width: 50%;
-  border: none;
+  /* border: none; */
 }
 
 .email-input {
-  border: none;
+  /* border: none; */
   border-radius: 0;
   width: 100%;
-  height: 300px;
+  height: 200px;
 }
 
 .send-btn {
-  text-align: left;
-  font-size: large;
-  font-family: monospace;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: rgb(0, 0, 0) -3px 3px 2px 0px;
-  background-color: rgb(211, 211, 211);
-  border-left: rgb(190, 190, 190) solid 4px;
-  border-bottom: rgb(170, 170, 170) solid 2px;
-  border-top: none;
-  border-right: none;
+  font-size: small;
+  font-family: "Open Sans", sans-serif;
+  background-color: rgb(255, 255, 255);
+  border: outset rgb(190, 190, 190) 2px;
+  border-radius: 1rem;
+  margin-left: 10px;
+  margin-bottom: 10px
 }

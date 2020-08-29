@@ -10,7 +10,7 @@ function EmailForm({ handleFormInput, submitForm }) {
       <br />
       <form>
         <Row>
-          <Col size="md-6">
+          <Col size="sm-6">
             <input
               name="name"
               className="name-input"
@@ -18,7 +18,7 @@ function EmailForm({ handleFormInput, submitForm }) {
               onChange={handleFormInput}
             ></input>
           </Col>
-          <Col size="md-6">
+          <Col size="sm-6">
             <input
               name="author"
               className="author-input"

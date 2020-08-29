@@ -3,15 +3,10 @@ import "./style.css";
 
 function ContactContainer(props) {
   return (
-      <>
-    <div>
-      <div className="stuff-container">
-        <p className="words">
-            {props.children}
-        </p>
+    <>
+      <div>
+        <div className="stuff-container">{props.children}</div>
       </div>
-    </div>
-    <br />
     </>
   );
 }

@@ -2,6 +2,7 @@
   {
     "id": "1",
     "title": "Daily Planner",
+    "description": "This is a simple daily planner application built with javascript, html, and css. It also uses moment.js",
     "imgpath": "daily-planner.jpg",
     "github": "https://github.com/SquidDOTjpeg/Daily-Planner",
     "deployed": "https://squiddotjpeg.github.io/Daily-Planner/"
@@ -9,6 +10,7 @@
   {
     "id": "2",
     "title": "Hungry Hippos",
+    "description": "An application for searching for recipes and adding their ingredients to a list. Built with javascript, html, css, and foundation as the css framework. We also accessed a recipe api and used mapbox for finding your nearest grocery store",
     "imgpath": "hippo.jpg",
     "github": "https://github.com/SquidDOTjpeg/Hungry-Hippos",
     "deployed": "https://squiddotjpeg.github.io/Hungry-Hippos/"
@@ -16,15 +18,17 @@
   {
     "id": "3",
     "title": "artGarden",
+    "description": "A new take on the gig based world of freelance art. We used javascript, jQuery, html, css, handlebars, bulma for the css framework, and created our own API with mongoDB acting as the database.",
     "imgpath": "art.jpg",
     "github": "https://github.com/SquidDOTjpeg/art-garden-bc",
     "deployed": "https://artgarden.herokuapp.com"
   },
   {
     "id": "4",
-    "title": "Progressive Finance Tracker",
-    "imgpath": "finance.jpg",
-    "github": "https://github.com/SquidDOTjpeg/pwa-homework",
-    "deployed": "https://pwa-homework.herokuapp.com/"
+    "title": "Bug Out",
+    "description": "Bug tracker built with the full MERN stack.",
+    "imgpath": "bug-out.jpg",
+    "github": "https://github.com/SquidDOTjpeg/bug-out",
+    "deployed": "https://bug-out-anthony.herokuapp.com/"
   }
 ]

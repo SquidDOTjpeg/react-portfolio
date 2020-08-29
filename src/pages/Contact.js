@@ -40,8 +40,8 @@ function Contact() {
       setEmailNotification({
         message: "Sending...",
         sent: false,
-        show: true
-      })
+        show: true,
+      });
       axios({
         method: "POST",
         url: "https://squid-portfolio.herokuapp.com/send",
@@ -71,46 +71,36 @@ function Contact() {
 
   return (
     <>
-      <div className="big-stuff-container">
+      <div className="skew">
         <Row>
-          <Col size="md-12">
-            <Title>Contact Me</Title>
+          <Col size="md-3" />
+          <Col size="md-6">
+            <div className="big-stuff-container">
+              <Title>Contact Me</Title>
+
+              <ContactContainer>
+                <ContactLinks link="https://github.com/SquidDOTjpeg">
+                  <i className="fab fa-github link"></i>
+                </ContactLinks>
+                <ContactLinks link="https://www.linkedin.com/in/anthony-pillow-81a0a518a/">
+                  <i className="fab fa-linkedin-in link"></i>
+                </ContactLinks>
+              </ContactContainer>
+
+              <EmailForm
+                handleFormInput={handleFormInput}
+                submitForm={submitForm}
+              />
+              <EmailNotification
+                message={emailNotificationState.message}
+                sent={emailNotificationState.sent}
+                show={emailNotificationState.show}
+                clearNotificationState={clearNotificationState}
+              />
+            </div>
           </Col>
+          <Col size="md-3" />
         </Row>
-        <Row>
-          <Col size="md-4">
-            <ContactContainer>
-              <i className="fas fa-envelope"></i>{" "}
-              <ContactLinks>anthonypillow18@gmail.com</ContactLinks>
-            </ContactContainer>
-          </Col>
-          <Col size="md-4">
-            <ContactContainer>
-              <i className="fab fa-github"></i>{" "}
-              <ContactLinks link="https://github.com/SquidDOTjpeg">
-                SquidDOTjpeg
-              </ContactLinks>
-            </ContactContainer>
-          </Col>
-          <Col size="md-4">
-            <ContactContainer>
-              <i className="fab fa-linkedin-in"></i>{" "}
-              <ContactLinks link="https://www.linkedin.com/in/anthony-pillow-81a0a518a/">
-                Anthony Pillow
-              </ContactLinks>
-            </ContactContainer>
-          </Col>
-        </Row>
-      </div>
-      <br></br>
-      <div className="big-stuff-container">
-        <EmailForm handleFormInput={handleFormInput} submitForm={submitForm} />
-        <EmailNotification
-          message={emailNotificationState.message}
-          sent={emailNotificationState.sent}
-          show={emailNotificationState.show}
-          clearNotificationState={clearNotificationState}
-        />
       </div>
     </>
   );
