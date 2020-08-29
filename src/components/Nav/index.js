@@ -6,6 +6,8 @@ import { Link, useLocation } from "react-router-dom";
 function Nav() {
   const location = useLocation();
 
+  // var logo = require("");
+
   return (
     <div className="nav-container">
       <Row>
@@ -41,6 +43,7 @@ function Nav() {
           >
             Contact
           </Link>
+          <img src="./logo192.png" alt="Logo" className="logo"></img>
         </Col>
         <Col size="md-3"></Col>
       </Row>
